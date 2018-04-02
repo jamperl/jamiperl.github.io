@@ -3,19 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Challenge 3</title>
-    <script type="text/javascript">
-    function checkForm(){
-        var isRadio1Checked = document.getElementById("opt-straw").checked;
-        var isRadio2Checked = document.getElementById("opt-blue").checked;
-        
-        if (isRadio1Checked || isRadio2Checked) {
-          return true;
-      	}
-      	else {
-        	alert("Please select your favorite berry!");
-        	return false;
-      	}
-    </script>
+	<script type="text/javascript">
+		function checkForm(){
+		var isRadio1Checked = document.getElementById("opt-straw").checked;
+		var isRadio2Checked = document.getElementById("opt-blue").checked;
+
+		if ((!isRadio1Checked && !isRadio2Checked) || (isRadio1Checked && isRadio2Checked)) {
+		    return false;
+		} else {
+		    console.log("Success!")
+		    return true;
+		}
+	} 
+	</script>
 </head>
 <body>
   <h1> Challenge 3</h1>
