@@ -10,6 +10,14 @@
         <link href="css/style.css" rel="stylesheet">
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--
+        <script type="text/javascript">
+            function changeImage(current) {
+                document.getElementById("image").style.backgroundImage = "url('" + current.src + "')";
+                document.getElementById("image").innerHTML = current.alt;
+            }
+        </script>
+-->
         <title>Love It or Leave It</title>
     </head>
 
@@ -17,23 +25,154 @@
         <header>
             <nav>
                 <ul>
-                    <li>What We Do</li>
-                    <li>About Dawn</li>
-                    <li>Services/Pricing</li>
-                    <li>Contact Us</li>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#service">What We Do</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Dawn</a>
+                    </li>
+                    <li>
+                        <a href="#past">Past Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="contact">Contact/Book</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <div id="biz-header">
-            <div class="front-content">
-                    <h1 id="biz-name">Love it or Leave it</h1>
-                    <h3 class="big-desc">Clean</h3>
-                    <h3 class="big-desc">Organize</h3>
-                    <h3 class="big-desc">Smile</h3>
-                    <p>A Business By Dawn Perlmutter</p>
+        <section class="display_page" id="home">
+            <div id="biz-header">
+                <div class="front-content">
+                        <h1 class="biz-name">Love it or Leave it</h1>
+                        <h3 class="big-desc">Clean</h3>
+                        <h3 class="big-desc">Organize</h3>
+                        <h3 class="big-desc">Smile</h3>
+                        <p>A Business By Dawn Perlmutter</p>
+                </div>
             </div>
-        </div>
-        
+        </section>
+        <section class="display-page" id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-md-offset-3">
+                        <h2 class="biz-name" id="section_name" >WHAT WE DO</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 col-md-offset-2">
+                        <h3 class="big-desc other-desc">Unorganized closets and spaces in your house? Need to pack and move efficiently? Looking for some new style? Then you need Love It or Leave It. We are the service that removes the clutter and stress in all aspects of a house.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 image-sect">
+                        <figure>
+                            <figcaption class="desc-title icon-title">ORGANIZE YOUR SPACE</figcaption>
+                            <img class="about-icon" src='images/organize.png' alt="Oragnize Everything You Own">
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 image-sect">
+                        <figure>
+                            <figcaption class="desc-title icon-title">PACK AND MOVE</figcaption>
+                            <img class="about-icon" src='images/move.png' alt="Prep Your House for Moving Day">
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 image-sect">
+                        <figure>
+                            <figcaption class="desc-title icon-title">PERSONAL SHOPPING</figcaption>
+                            <img class="about-icon" src='images/shop.png' alt="Bring your closet to the present">
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 image-sect">
+                        <figure>
+                            <figcaption class="desc-title icon-title">SMILE GUARANTEED</figcaption>
+                            <img class="about-icon" src='images/smile.png' alt="Smile is always guaranteed">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="display-page" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class='biz-name' id='section_name'>
+                            <h2>ABOUT DAWN</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 icon-title">
+                        <h3 id="desc-text">Dawn has been at the intersection of people and fashion for as long as she can remember. Born and raised in Toronto, Dawn has always stayed true to her roots. Starting her days at Beaver Canoe as a buyer, she eventually found a way to open her own online store, WhereDidYouGetThat.ca. After a relocaiton to the United States, Dawn is back to help with all your personal needs. 3 moves, 4 closets and 2 countries later, she has all the experience you need for your home.</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="display-page" id="past">
+            <div class="front-content" id="gallery">
+                <h2 class="biz-name" id="section_name" >PAST WORK</h2>
+            </div>
+            <div class="grid">
+                <img class="cell" tabindex="1" src="images/closet1.jpg" alt="Organized Closet by Dawn"/>
+                <img class="cell" tabindex="1" src="images/packed1.jpg" alt="Packed House by Dawn"/>
+                <img class="cell" tabindex="1" src="images/clothes1.jpg" alt="Clothes Purchased by Dawn"/>
+                <img class="cell" tabindex="1" src="images/closet2.jpg" alt="Organized Closet by Dawn"/>
+                <img class="cell" tabindex="1" src="images/clothes2.jpeg" alt="CLothes Purchased By Dawn"/>
+                <img class="cell" tabindex="1" src="images/packed2.jpg" alt="Packed House by Dawn"/>
+                <img class="cell" tabindex="1" src="images/closet3.jpg" alt="Organized Closet by Dawn"/>
+                <img class="cell" tabindex="1" src="images/clothes3.jpg" alt="CLothes Purchased By Dawn"/>
+            </div>
+        </section>
+<!--
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h2 class="biz-name" id="section_name" >PAST WORK</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8" id="image">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img tabindex="1" src="images/closet1.jpg" alt="Organized Closet by Dawn" onmouseover=changeImage(this)/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img tabindex="1" src="images/packed1.jpg" alt="Packed Up House by Dawn" onmouseover=changeImage(this)/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img tabindex="1" src="images/clothes1.jpg" alt="New Clothes Purchased by Dawn" onmouseover=changeImage(this)/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->                                                                                                            
+
+        <section class="display-page" id="contact">
+            <div class="container">
+                <h2 class="biz-name" id="section_name" >Book or Contact Today!</h2>
+                <div id="contact-form">
+                    <form method="POST" action="https://formspree.io/email@email.com">
+                        <input type="hidden" name="_subject" value="Love It or Leave It Booking Request" />
+                        <input type="email" name="_replyto" placeholder="Your email" required>
+                        <textarea name="message" placeholder="Your message" required></textarea>
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>LOVE IT OR LEAVE IT</h2>
+        </footer>
     </body>
     
 </html>
