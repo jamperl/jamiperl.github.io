@@ -174,7 +174,7 @@ section, .display_page {
 }
 
 
-#section_name {
+.section_name {
     padding: 10px;
     font-size: 50px;
     display: block;
