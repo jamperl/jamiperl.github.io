@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jamie Exam 2</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#show').click(function(){
+				$('#colleen').show();
+			})
+			$('#hide').click(function(){
+				$('#colleen').hide();
+			})
+		})
+	</script>
+</head>
+<body>
+	<header><h1>Jamie Perlmutter</h1></header>
+	<div class="row">
+		<div class="contain" id="colleen">
+			<img src='images/examPic.JPG' alt='Colleen Humor'>
+		</div>
+		<div class="contain" id="umsi">
+			<img src='images/UMSI-logo.jpg' alt='UMSI Logo'>
+		</div>
+	</div>
+	<div>
+		<button id='hide'>Hide Image</button>
+		<button id='show'>Show Image</button>
+	</div>
+</body>
+</html>
